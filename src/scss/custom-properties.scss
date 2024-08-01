@@ -1,0 +1,36 @@
+/* TheCover Colours */
+:root {
+  /* Live */
+  /* color */
+  --colors-brand-accent-blue: hsl(201 100% 14%);
+  --colors-brand-black: hsl(0 0 0%);
+  --colors-brand-grey-dark: hsl(220 3% 23%);
+  --colors-brand-grey-light: hsl(180 2% 88%);
+  --colors-brand-grey-mid-light: hsl(210 2% 76%);
+  --colors-brand-navy: hsl(201 100% 24%);
+  --colors-brand-primary-red: hsl(348 82% 24%);
+  --colors-brand-secondary-red: hsl(348 82% 39%);
+  --colors-brand-white: hsl(0 0 100%);
+
+  --colors-data-green: hsl(80 100% 36%);
+  --colors-data-purple: hsl(286 56% 33%);
+  --colors-data-turquoise: hsl(184 100% 33%);
+  
+  --colors-utility-spacing-block-fill: hsl(0 0 100% / 0);
+}
+/* TheCover Units */
+:root {
+
+  /* number */
+  --spacing-0: 0rem;
+  --spacing-4: 0.25rem;
+  --spacing-8: 0.5rem;
+  --spacing-16: 1rem;
+  --spacing-24: 1.5rem;
+  --spacing-32: 2rem;
+  --spacing-40: 2.5rem;
+  --spacing-48: 3rem;
+  --spacing-56: 3.5rem;
+  --spacing-64: 4rem;
+  --spacing-72: 4.5rem;
+}

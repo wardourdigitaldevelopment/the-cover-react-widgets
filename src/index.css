@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* TheCover Units */
+:root {
+
+    /* number */
+    --spacing-0: 0rem;
+    --spacing-4: 0.25rem;
+    --spacing-8: 0.5rem;
+    --spacing-16: 1rem;
+    --spacing-24: 1.5rem;
+    --spacing-32: 2rem;
+    --spacing-40: 2.5rem;
+    --spacing-48: 3rem;
+    --spacing-56: 3.5rem;
+    --spacing-64: 4rem;
+    --spacing-72: 4.5rem;
+}
+
+/* TheCover Colours */
+:root {
+    /* Live */
+    /* color */
+    --color-3-additional-spacing-block-fill: hsl(0 0 100% / 0);
+    --color-brand-accent-blue: hsl(201 100% 14%);
+    --color-brand-black: hsl(0 0 0%);
+    --color-brand-grey-dark: hsl(220 3% 23%);
+    --color-brand-grey-light: hsl(180 2% 88%);
+    --color-brand-grey-mid-light: hsl(210 2% 76%);
+    --color-brand-navy: hsl(201 100% 24%);
+    --color-brand-primary-red: hsl(348 82% 24%);
+    --color-brand-secondary-red: hsl(348 82% 39%);
+    --color-brand-white: hsl(0 0 100%);
+    --color-data-green: hsl(80 100% 36%);
+    --color-data-purple: hsl(286 56% 33%);
+    --color-data-turquoise: hsl(184 100% 33%);
+}
+
+/* Typography Variables */
+
+:root {
+    --font-weight-regular: 500;
+    --font-weight-bold: 700;
+    --font-family-exo: exo;
+    --font-family-raleway: Raleway;
+}
+
+:root {
+    /* Small screen */
+    /* number */
+    --blockquote-line-height-default: 1rem;
+    --blockquote-size-default: 1.5rem;
+    --letter-spacing-tighter: 0rem;
+    --paragraph-indent-none: 0rem;
+    --paragraph-spacing-none: 0rem;
+    --text-body-line-height-md: 1rem;
+    --text-body-line-height-sm: 1rem;
+    --text-body-line-height-xs: 1rem;
+    --text-body-line-height-lg: 1.5rem;
+    --text-body-line-height-xl: 1.5rem;
+    --text-body-line-height-2xl: 2rem;
+    --text-body-line-height-3xl: 2.5rem;
+    --text-body-line-height-4xl: 3.125rem;
+    --text-body-line-height-5xl: 4.5rem;
+    --text-body-size-sm: 0.75rem;
+    --text-body-size-xs: 0.75rem;
+    --text-body-size-md: 0.875rem;
+    --text-body-size-lg: 1rem;
+    --text-body-size-xl: 1.25rem;
+    --text-body-size-2xl: 1.5rem;
+    --text-body-size-3xl: 2rem;
+    --text-body-size-4xl: 2.625rem;
+    --text-body-size-5xl: 3.5rem;
+    --text-heading-line-height-lg: 1.5rem;
+    --text-heading-line-height-sm: 1.5rem;
+    --text-heading-line-height-xl: 1.5rem;
+    --text-heading-line-height-2xl: 2rem;
+    --text-heading-line-height-3xl: 2.5rem;
+    --text-heading-line-height-4xl: 3.125rem;
+    --text-heading-line-height-5xl: 4.5rem;
+    --text-heading-size-lg: 1rem;
+    --text-heading-size-sm: 1rem;
+    --text-heading-size-xl: 1.25rem;
+    --text-heading-size-2xl: 1.5rem;
+    --text-heading-size-3xl: 2rem;
+    --text-heading-size-4xl: 2.625rem;
+    --text-heading-size-5xl: 3.5rem;
+}
+
+@media (min-width: 400px) {
+    :root {
+        /* Regular screen */
+        /* number */
+        --blockquote-line-height-default: 3.125rem;
+        --blockquote-size-default: 2.625rem;
+        --letter-spacing-tighter: 0rem;
+        --paragraph-indent-none: 0rem;
+        --paragraph-spacing-none: 0rem;
+        --text-body-line-height-sm: 1rem;
+        --text-body-line-height-xs: 1rem;
+        --text-body-line-height-lg: 1.5rem;
+        --text-body-line-height-md: 1.5rem;
+        --text-body-line-height-xl: 2rem;
+        --text-body-line-height-2xl: 2.5rem;
+        --text-body-line-height-3xl: 3.125rem;
+        --text-body-line-height-4xl: 4.5rem;
+        --text-body-line-height-5xl: 5.5rem;
+        --text-body-size-xs: 0.75rem;
+        --text-body-size-sm: 0.875rem;
+        --text-body-size-md: 1rem;
+        --text-body-size-lg: 1.25rem;
+        --text-body-size-xl: 1.5rem;
+        --text-body-size-2xl: 2rem;
+        --text-body-size-3xl: 2.625rem;
+        --text-body-size-4xl: 3.5rem;
+        --text-body-size-5xl: 4.5rem;
+        --text-heading-line-height-lg: 1.5rem;
+        --text-heading-line-height-sm: 1.5rem;
+        --text-heading-line-height-xl: 2rem;
+        --text-heading-line-height-2xl: 2.5rem;
+        --text-heading-line-height-3xl: 3.125rem;
+        --text-heading-line-height-4xl: 4.5rem;
+        --text-heading-line-height-5xl: 5.5rem;
+        --text-heading-size-sm: 1rem;
+        --text-heading-size-lg: 1.25rem;
+        --text-heading-size-xl: 1.5rem;
+        --text-heading-size-2xl: 2rem;
+        --text-heading-size-3xl: 2.625rem;
+        --text-heading-size-4xl: 3.5rem;
+        --text-heading-size-5xl: 4.5rem;
+    }
+}
+

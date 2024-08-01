@@ -10,5 +10,5 @@ export interface RegionStatsCardProps {
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 export const RegionStatsCard = ({ className }: RegionStatsCardProps) => {
-    return <div className={classNames(styles.root, className)}>RegionStatsCard</div>;
+    return <div className={`${className}`}>RegionStatsCard</div>;
 };

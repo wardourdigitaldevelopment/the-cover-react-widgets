@@ -10,5 +10,5 @@ export interface ButtonProps {
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 export const Button = ({ className }: ButtonProps) => {
-    return <div className={classNames(styles.root, className)}>Button</div>;
+    return <button className={classNames(styles.root, className)}>Button</button>;
 };
