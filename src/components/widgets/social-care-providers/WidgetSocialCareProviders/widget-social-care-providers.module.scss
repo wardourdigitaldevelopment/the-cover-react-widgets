@@ -53,41 +53,7 @@
   row-gap: var(--spacing-8);
   column-gap: var(--spacing-8);
 }
-.region-stat {
-  aspect-ratio: 16/9;
-  display: flex;
-  padding: var(--spacing-8, 8px);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: var(--spacing-4, 4px);
-  border: 1px solid var(--color-brand-accent-blue, #002e47);
-  background: var(--color-brand-grey-mid-light, #c1c2c3);
-}
-.region-stat-heading {
-  color: var(--color-brand-black, #000);
-  text-align: center;
 
-  /* Raleway Bold/14px */
-  font-family: var(--font-family-raleway, Raleway);
-  font-size: var(--text-body-size-sm, 14px);
-  font-style: normal;
-  font-weight: var(--font-weight-bold, 700);
-  line-height: var(--text-body-line-height-sm, 16px); /* 114.286% */
-  letter-spacing: var(--letter-spacing-tighter, 0px);
-}
-.region-stat-value {
-  color: var(--color-brand-black, #000);
-  text-align: center;
-
-  /* Exo Regular/16px */
-  font-family: var(--font-family-exo, Exo);
-  font-size: var(--text-body-size-md, 16px);
-  font-style: normal;
-  font-weight: var(--font-weight-regular, 500);
-  line-height: var(--text-body-line-height-md, 24px); /* 150% */
-  letter-spacing: var(--letter-spacing-tighter, 0px);
-}
 .grid {
   display: grid;
   grid-template: 1fr / 1fr 1fr 1fr;

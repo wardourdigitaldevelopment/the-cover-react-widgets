@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import styles from './widget-social-care-providers.module.scss';
 import { Button } from '../../../primiative-components/button/button';
 import { FooterStats } from '../footer-stats/footer-stats';
+import { RegionalStatistic } from '../regional-statistic/regional-statistic';
 
 export interface WidgetSocialCareProvidersProps {
     className?: string;
@@ -37,42 +38,15 @@ export const WidgetSocialCareProviders = ({ className }: WidgetSocialCareProvide
             <div className={styles['right-column']}>
                 <h3 className={styles.subheading}>Regional Breakdown for 2024</h3>
                 <div className={styles['stats-grid']}>
-                    <div className={styles['region-stat']}>
-                        <div className={styles['region-stat-heading']}>South East</div>
-                        <div className={styles['region-stat-value']}>2000</div>
-                    </div>
-                    <div className={styles['region-stat']}>
-                        <div className={styles['region-stat-heading']}>South East</div>
-                        <div className={styles['region-stat-value']}>2000</div>
-                    </div>
-                    <div className={styles['region-stat']}>
-                        <div className={styles['region-stat-heading']}>South East</div>
-                        <div className={styles['region-stat-value']}>2000</div>
-                    </div>
-                    <div className={styles['region-stat']}>
-                        <div className={styles['region-stat-heading']}>South East</div>
-                        <div className={styles['region-stat-value']}>2000</div>
-                    </div>
-                    <div className={styles['region-stat']}>
-                        <div className={styles['region-stat-heading']}>South East</div>
-                        <div className={styles['region-stat-value']}>2000</div>
-                    </div>
-                    <div className={styles['region-stat']}>
-                        <div className={styles['region-stat-heading']}>South East</div>
-                        <div className={styles['region-stat-value']}>2000</div>
-                    </div>
-                    <div className={styles['region-stat']}>
-                        <div className={styles['region-stat-heading']}>South East</div>
-                        <div className={styles['region-stat-value']}>2000</div>
-                    </div>
-                    <div className={styles['region-stat']}>
-                        <div className={styles['region-stat-heading']}>South East</div>
-                        <div className={styles['region-stat-value']}>2000</div>
-                    </div>
-                    <div className={styles['region-stat']}>
-                        <div className={styles['region-stat-heading']}>South East</div>
-                        <div className={styles['region-stat-value']}>2000</div>
-                    </div>
+                    <RegionalStatistic />
+                    <RegionalStatistic />
+                    <RegionalStatistic />
+                    <RegionalStatistic />
+                    <RegionalStatistic />
+                    <RegionalStatistic />
+                    <RegionalStatistic />
+                    <RegionalStatistic />
+                    <RegionalStatistic />
                 </div>
                 <FooterStats />
             </div>
