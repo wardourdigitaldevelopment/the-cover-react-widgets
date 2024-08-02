@@ -1,0 +1,80 @@
+.root {
+  display: flex;
+  padding: var(--spacing-0, 0px);
+  justify-content: center;
+  align-items: flex-end;
+  gap: var(--spacing-24, 24px);
+  align-self: stretch;
+}
+.grid {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  gap: 20px;
+}
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.right-column {
+  display: flex;
+  padding-bottom: var(--spacing-8, 8px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-8, 8px);
+}
+.text-total {
+  color: #1e1e1e;
+
+  /* Raleway Regular/16px */
+  font-family: var(--font-family-raleway, Raleway);
+  font-size: var(--text-body-size-md, 16px);
+  font-style: normal;
+  font-weight: var(--font-weight-regular, 500);
+  line-height: var(--text-body-line-height-md, 24px); /* 150% */
+  letter-spacing: var(--letter-spacing-tighter, 0px);
+}
+.numerical-total {
+  color: var(--color-brand-accent-blue, #002e47);
+
+  /* Exo Regular/56px */
+  font-family: var(--font-family-exo, Exo);
+  font-size: var(--text-heading-size-4xl, 56px);
+  font-style: normal;
+  font-weight: var(--font-weight-regular, 500);
+  line-height: var(--text-heading-line-height-4xl, 72px); /* 128.571% */
+  letter-spacing: var(--letter-spacing-tighter, 0px);
+}
+.percentage-change {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-0, 0px);
+}
+.text-year {
+}
+.text-year__content {
+  color: #1e1e1e;
+
+  /* Raleway Regular/14px */
+  font-family: var(--font-family-raleway, Raleway);
+  font-size: var(--text-body-size-sm, 14px);
+  font-style: normal;
+  font-weight: var(--font-weight-regular, 500);
+  line-height: var(--text-body-line-height-sm, 16px); /* 114.286% */
+  letter-spacing: var(--letter-spacing-tighter, 0px);
+}
+.percentage-change__text {
+  color: #1a733a;
+
+  /* Exo Bold/32px */
+  font-family: var(--font-family-exo, Exo);
+  font-size: var(--text-heading-size-2xl, 32px);
+  font-style: normal;
+  font-weight: var(--font-weight-bold, 700);
+  line-height: var(--text-heading-line-height-2xl, 40px); /* 125% */
+  letter-spacing: var(--letter-spacing-tighter, 0px);
+}
+.percentage-change__image {
+  width: 32px;
+  height: 32px;
+}

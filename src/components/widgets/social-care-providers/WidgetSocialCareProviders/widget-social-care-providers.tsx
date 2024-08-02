@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import styles from './widget-social-care-providers.module.scss';
 import { Button } from '../../../primiative-components/button/button';
+import { FooterStats } from '../footer-stats/footer-stats';
 
 export interface WidgetSocialCareProvidersProps {
     className?: string;
@@ -73,6 +74,7 @@ export const WidgetSocialCareProviders = ({ className }: WidgetSocialCareProvide
                         <div className={styles['region-stat-value']}>2000</div>
                     </div>
                 </div>
+                <FooterStats />
             </div>
         </div>
     );

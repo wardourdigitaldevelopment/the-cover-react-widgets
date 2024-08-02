@@ -6,7 +6,7 @@ export default createBoard({
     Board: () => <WidgetSocialCareProviders />,
     isSnippet: true,
     environmentProps: {
-        windowWidth: 661,
+        windowWidth: 638,
         windowHeight: 667,
     },
 });
