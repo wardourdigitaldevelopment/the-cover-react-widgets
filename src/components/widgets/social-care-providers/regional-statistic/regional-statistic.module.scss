@@ -1,17 +1,24 @@
+@import '../../../../index.scss';
+
 .region-stat {
-  aspect-ratio: 16/9;
   display: flex;
+  width: 100%;
   padding: var(--spacing-8, 8px);
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: var(--spacing-4, 4px);
   border: 1px solid var(--color-brand-accent-blue, #002e47);
   background: var(--color-brand-grey-mid-light, #c1c2c3);
+
+  @media only screen and (min-width: $screen-width-600) {
+    flex-direction: column;
+    aspect-ratio: 16/9;
+    justify-content: center;
+    row-gap: var(--spacing-8);
+  }
 }
-.region-stat-heading {
+
+.region-stat__heading {
   color: var(--color-brand-black, #000);
-  text-align: center;
 
   /* Raleway Bold/14px */
   font-family: var(--font-family-raleway, Raleway);
@@ -21,15 +28,14 @@
   line-height: var(--text-body-line-height-sm, 16px); /* 114.286% */
   letter-spacing: var(--letter-spacing-tighter, 0px);
 }
-.region-stat-value {
+.region-stat__value {
   color: var(--color-brand-black, #000);
-  text-align: center;
 
-  /* Exo Regular/16px */
+  /* Exo Regular/20px */
   font-family: var(--font-family-exo, Exo);
-  font-size: var(--text-body-size-md, 16px);
+  font-size: var(--text-body-size-lg, 20px);
   font-style: normal;
   font-weight: var(--font-weight-regular, 500);
-  line-height: var(--text-body-line-height-md, 24px); /* 150% */
+  line-height: var(--text-body-line-height-lg, 24px); /* 120% */
   letter-spacing: var(--letter-spacing-tighter, 0px);
 }

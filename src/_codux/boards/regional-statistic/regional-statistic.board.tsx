@@ -5,4 +5,7 @@ export default createBoard({
     name: 'RegionalStatistic',
     Board: () => <RegionalStatistic />,
     isSnippet: true,
+    environmentProps: {
+        windowWidth: 460,
+    },
 });

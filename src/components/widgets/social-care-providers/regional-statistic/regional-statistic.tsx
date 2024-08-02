@@ -12,8 +12,8 @@ export interface RegionalStatisticProps {
 export const RegionalStatistic = ({ className }: RegionalStatisticProps) => {
     return (
         <div className={styles['region-stat']}>
-            <div className={styles['region-stat-heading']}>South East</div>
-            <div className={styles['region-stat-value']}>2000</div>
+            <div className={styles['region-stat__heading']}>South East</div>
+            <div className={styles['region-stat__value']}>2000</div>
         </div>
     );
 };

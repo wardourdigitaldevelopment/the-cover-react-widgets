@@ -1,10 +1,18 @@
+@import '../../../../index.scss';
+
 .root {
   display: flex;
-  padding: var(--spacing-0, 0px);
-  justify-content: center;
+  padding: 0rem;
+  justify-content: start;
   align-items: flex-end;
   gap: var(--spacing-24, 24px);
   align-self: stretch;
+  align-content: center;
+  padding-left: var(--spacing-8);
+
+  @media only screen and (min-width: $screen-width-600) {
+    justify-content: start;
+  }
 }
 .grid {
   display: grid;
@@ -18,7 +26,6 @@
 }
 .right-column {
   display: flex;
-  padding-bottom: var(--spacing-8, 8px);
   justify-content: center;
   align-items: center;
   gap: var(--spacing-8, 8px);
@@ -39,11 +46,16 @@
 
   /* Exo Regular/56px */
   font-family: var(--font-family-exo, Exo);
-  font-size: var(--text-heading-size-4xl, 56px);
+  font-size: var(--text-heading-size-2xl, 32px);
   font-style: normal;
   font-weight: var(--font-weight-regular, 500);
-  line-height: var(--text-heading-line-height-4xl, 72px); /* 128.571% */
+  line-height: var(--text-heading-line-height-2xl, 40px); /* 125% */
   letter-spacing: var(--letter-spacing-tighter, 0px);
+
+  @media only screen and (min-width: $screen-width-600) {
+    font-size: var(--text-heading-size-4xl, 56px);
+    line-height: var(--text-heading-line-height-4xl, 72px); /* 128.571% */
+  }
 }
 .percentage-change {
   display: flex;

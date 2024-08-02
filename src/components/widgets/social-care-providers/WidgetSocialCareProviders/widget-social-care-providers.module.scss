@@ -7,6 +7,7 @@
   display: flex;
   column-gap: var(--spacing-24);
 }
+
 .heading {
   color: var(--text-colour-heading-text-brand, #6e0b1f);
 
@@ -18,6 +19,7 @@
   line-height: var(--text-heading-line-height-2xl, 40px); /* 125% */
   letter-spacing: var(--letter-spacing-tighter, 0px);
 }
+
 .left-column {
   display: flex;
   flex-direction: column;
@@ -25,6 +27,7 @@
   row-gap: var(--spacing-16);
   max-width: 325px;
 }
+
 .paragraph {
   color: var(--text-colour-text-primary, #3a3b3d);
 
@@ -36,15 +39,18 @@
   line-height: var(--text-body-line-height-md, 24px); /* 150% */
   letter-spacing: var(--letter-spacing-tighter, 0px);
 }
+
 .content {
   display: flex;
   flex-direction: column;
   row-gap: var(--spacing-8);
 }
+
 .right-column {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-16, 16px);
+  width: 100%;
 }
 .stats-grid {
   display: grid;
