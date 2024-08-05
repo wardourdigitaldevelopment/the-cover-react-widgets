@@ -1,19 +1,32 @@
 import classNames from 'classnames';
 import styles from './mobile-first-widget-social-care.module.scss';
-import { Button } from '../../../primiative-components/button/button';
 import { RegionalStatistic } from '../regional-statistic/regional-statistic';
 import { FooterStats } from '../footer-stats/footer-stats';
+import { ButtonGrid } from '../button-grid/button-grid';
+import regionalData from '../../../../data/social-care-providers'
+import { useEffect, useState } from 'react';
 
 export interface MobileFirstWidgetSocialCareProps {
     className?: string;
 }
 
-/**
- * This component was created using Codux's Default new component template.
- * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
- */
-
 export const MobileFirstWidgetSocialCare = ({ className }: MobileFirstWidgetSocialCareProps) => {
+
+    const [currentYearIndex, setCurrentYearIndex] = useState(0)
+    const [currentYear, setCurrentYear] = useState(regionalData[currentYearIndex])
+
+    useEffect(() => {
+        setCurrentYear(regionalData[currentYearIndex])
+    }, [currentYearIndex])
+    const updateCurrentYear = (index: number) => {
+        setCurrentYearIndex(index)
+    }
+
+    const yearLabels = regionalData.map(region => region.year)
+
+    const regionStatistics = currentYear.regions
+      .map(region => <RegionalStatistic key={region.region}  regionLabel={region.region} regionStat={region.total}/>)
+
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles['left-column']}>
@@ -27,35 +40,23 @@ export const MobileFirstWidgetSocialCare = ({ className }: MobileFirstWidgetSoci
                         supply.
                     </p>
                 </div>
-                <div className={styles['button-grid']}>
-                    <Button />
-                    <Button />
-                    <Button />
-                    <Button />
-                    <Button />
-                </div>
+                <ButtonGrid
+                  activeButton={currentYear.year}
+                  buttonsData={yearLabels}
+                  updateSelectedYear={updateCurrentYear}
+                />
             </div>
             <div className={styles['right-column']}>
-                <h3 className={styles.subheading}>Regional Breakdown for 2024</h3>
+                <h3 className={styles.subheading}>Regional Breakdown for {currentYear.year}</h3>
                 <div className={styles['region-stat-grid']}>
-                    <RegionalStatistic />
-                    <RegionalStatistic />
-                    <RegionalStatistic />
-                    <RegionalStatistic />
-                    <RegionalStatistic />
-                    <RegionalStatistic />
-                    <RegionalStatistic />
-                    <RegionalStatistic />
-                    <RegionalStatistic />
+                    {regionStatistics}
                 </div>
-                <FooterStats />
-                <div className={styles['button-grid']}>
-                    <Button />
-                    <Button />
-                    <Button />
-                    <Button />
-                    <Button />
-                </div>
+                <FooterStats currentYearTotal={currentYear.total} />
+                <ButtonGrid
+                  activeButton={currentYear.year}
+                  buttonsData={yearLabels}
+                  updateSelectedYear={updateCurrentYear}
+                />
             </div>
         </div>
     );

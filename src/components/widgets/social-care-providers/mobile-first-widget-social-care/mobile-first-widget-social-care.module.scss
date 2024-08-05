@@ -55,38 +55,30 @@
   flex-direction: column;
   row-gap: var(--spacing-8);
 
-  .button-grid {
+  [data-el="button-grid"] {
     display: none;
   }
 
   @media only screen and (min-width: $screen-width-600) {
-    .button-grid {
+    [data-el="button-grid"] {
       display: flex;
     }
     max-width: 220px;
   }
 }
 
-.button-grid {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  gap: var(--spacing-16, 16px);
-  align-self: stretch;
-  flex-wrap: wrap;
-}
 .right-column {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-16) 1rem;
   flex: 1;
 
-  .button-grid {
+  [data-el="button-grid"] {
     display: flex;
   }
 
   @media only screen and (min-width: $screen-width-600) {
-    .button-grid {
+    [data-el="button-grid"] {
       display: none;
     }
   }
