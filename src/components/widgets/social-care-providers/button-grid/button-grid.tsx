@@ -14,8 +14,8 @@ export interface ButtonGridProps {
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 
-export const ButtonGrid = ({ className, updateSelectedYear, buttonsData }: ButtonGridProps) => {
+export const ButtonGrid = ({ className, updateSelectedYear, buttonsData, activeButton }: ButtonGridProps) => {
     return <div data-el="button-grid" className={styles['button-grid']}>
-        {buttonsData.map((data, index) => <Button key={index} buttonLabel={data}  isActive={false} buttonEvent={updateSelectedYear} index={index}/>)}
+        {buttonsData.map((data, index) => <Button key={index} buttonLabel={data}  isActive={activeButton === data} buttonEvent={updateSelectedYear} index={index}/>)}
     </div>;
 };

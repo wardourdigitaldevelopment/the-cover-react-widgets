@@ -14,6 +14,7 @@ export const MobileFirstWidgetSocialCare = ({ className }: MobileFirstWidgetSoci
 
     const [currentYearIndex, setCurrentYearIndex] = useState(0)
     const [currentYear, setCurrentYear] = useState(regionalData[currentYearIndex])
+    const initialTotal = regionalData[0].total
 
     useEffect(() => {
         setCurrentYear(regionalData[currentYearIndex])
@@ -51,7 +52,7 @@ export const MobileFirstWidgetSocialCare = ({ className }: MobileFirstWidgetSoci
                 <div className={styles['region-stat-grid']}>
                     {regionStatistics}
                 </div>
-                <FooterStats currentYearTotal={currentYear.total} />
+                <FooterStats currentYearTotal={currentYear.total} initialTotal={initialTotal} />
                 <ButtonGrid
                   activeButton={currentYear.year}
                   buttonsData={yearLabels}

@@ -29,12 +29,34 @@
   justify-content: center;
   align-items: center;
   gap: var(--spacing-8, 8px);
+  transition: all ease-in-out 250ms;
+  opacity: 0;
+  &--visible {
+    opacity: 1;
+  }
+
+  .reel {
+    height: 1em;
+    display: flex;
+    align-items: flex-end;
+    overflow-y: hidden;
+
+    /** CUSTOMISE BELOW */
+    color: #1a733a;
+
+    font-family: var(--font-family-exo, Exo), serif;
+    font-size: var(--text-heading-size-2xl, 32px);
+    font-style: normal;
+    font-weight: var(--font-weight-bold, 700);
+    line-height: var(--text-heading-line-height-2xl, 40px); /* 125% */
+    letter-spacing: var(--letter-spacing-tighter, 0px);
+  }
 }
 .text-total {
   color: #1e1e1e;
 
   /* Raleway Regular/16px */
-  font-family: var(--font-family-raleway, Raleway);
+  font-family: var(--font-family-raleway, Raleway), serif;
   font-size: var(--text-body-size-md, 16px);
   font-style: normal;
   font-weight: var(--font-weight-regular, 500);
@@ -45,7 +67,7 @@
   color: var(--color-brand-accent-blue, #002e47);
 
   /* Exo Regular/56px */
-  font-family: var(--font-family-exo, Exo);
+  font-family: var(--font-family-exo, Exo), serif;
   font-size: var(--text-heading-size-2xl, 32px);
   font-style: normal;
   font-weight: var(--font-weight-regular, 500);
@@ -68,7 +90,7 @@
   color: #1e1e1e;
 
   /* Raleway Regular/14px */
-  font-family: var(--font-family-raleway, Raleway);
+  font-family: var(--font-family-raleway, Raleway), serif;
   font-size: var(--text-body-size-sm, 14px);
   font-style: normal;
   font-weight: var(--font-weight-regular, 500);
@@ -79,7 +101,7 @@
   color: #1a733a;
 
   /* Exo Bold/32px */
-  font-family: var(--font-family-exo, Exo);
+  font-family: var(--font-family-exo, Exo), serif;
   font-size: var(--text-heading-size-2xl, 32px);
   font-style: normal;
   font-weight: var(--font-weight-bold, 700);
@@ -89,4 +111,37 @@
 .percentage-change__image {
   width: 32px;
   height: 32px;
+}
+
+.group {
+  transition-delay: 0ms;
+  transition-timing-function: ease-in-out;
+  transform: translate(0, 0);
+}
+
+.group .number {
+  height: 1em;
+}
+
+.reel {
+  height: 1em;
+  display: flex;
+  align-items: flex-end;
+  overflow-y: hidden;
+
+  /** CUSTOMISE BELOW */
+  color: var(--color-brand-accent-blue, #002e47);
+
+  /* Exo Regular/56px */
+  font-family: var(--font-family-exo, Exo), serif;
+  font-size: var(--text-heading-size-2xl, 32px);
+  font-style: normal;
+  font-weight: var(--font-weight-regular, 500);
+  line-height: var(--text-heading-line-height-2xl, 40px); /* 125% */
+  letter-spacing: var(--letter-spacing-tighter, 0px);
+
+  @media only screen and (min-width: $screen-width-600) {
+    font-size: var(--text-heading-size-4xl, 56px);
+    line-height: var(--text-heading-line-height-4xl, 72px); /* 128.571% */
+  }
 }

@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import styles from './regional-statistic.module.scss';
+import Reel from '../../../../libs/reels';
 
 export interface RegionalStatisticProps {
     className?: string;
@@ -15,7 +16,9 @@ export const RegionalStatistic = ({ className, regionLabel, regionStat }: Region
     return (
         <div className={styles['region-stat']}>
             <div className={styles['region-stat__heading']}>{regionLabel}</div>
-            <div className={styles['region-stat__value']}>{regionStat}</div>
+            <div className={styles['region-stat__heading']}>
+              <Reel theme={styles} text={regionStat?.toString()} />
+            </div>
         </div>
     );
 };

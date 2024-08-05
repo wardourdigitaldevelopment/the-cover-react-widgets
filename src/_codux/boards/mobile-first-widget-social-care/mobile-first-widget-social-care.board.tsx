@@ -6,7 +6,7 @@ export default createBoard({
     Board: () => <MobileFirstWidgetSocialCare />,
     isSnippet: true,
     environmentProps: {
-        windowWidth: 810,
+        windowWidth: 756,
         windowHeight: 517,
     },
 });
