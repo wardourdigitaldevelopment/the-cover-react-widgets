@@ -9,9 +9,8 @@
   border: 1px solid var(--color-brand-accent-blue, #002e47);
   background: var(--color-brand-grey-mid-light, #c1c2c3);
 
-  @media only screen and (min-width: $screen-width-600) {
+  @media only screen and (min-width: $screen-width-500) {
     flex-direction: column;
-    aspect-ratio: 16/9;
     justify-content: center;
     row-gap: var(--spacing-8);
   }
@@ -21,24 +20,24 @@
   color: var(--color-brand-black, #000);
   text-align: center;
   /* Raleway Bold/14px */
-  font-family: var(--font-family-raleway, Raleway);
+  font-family: var(--font-family-raleway, Raleway), serif;
   font-size: var(--text-body-size-sm, 14px);
   font-style: normal;
   font-weight: var(--font-weight-bold, 700);
   line-height: var(--text-body-line-height-sm, 16px); /* 114.286% */
   letter-spacing: var(--letter-spacing-tighter, 0px);
 }
-.region-stat__value {
-  color: var(--color-brand-black, #000);
-  position: relative;
-  /* Exo Regular/20px */
-  font-family: var(--font-family-exo, Exo);
-  font-size: var(--text-body-size-lg, 20px);
-  font-style: normal;
-  font-weight: var(--font-weight-regular, 500);
-  line-height: var(--text-body-line-height-lg, 24px); /* 120% */
-  letter-spacing: var(--letter-spacing-tighter, 0px);
-}
+//.region-stat__value {
+//  color: var(--color-brand-black, #000);
+//  position: relative;
+//  /* Exo Regular/20px */
+//  font-family: var(--font-family-exo, Exo), serif;
+//  font-size: var(--text-body-size-lg, 20px);
+//  font-style: normal;
+//  font-weight: var(--font-weight-regular, 500);
+//  line-height: var(--text-body-line-height-lg, 24px); /* 120% */
+//  letter-spacing: var(--letter-spacing-tighter, 0px);
+//}
 
 .group {
   transition-delay: 0ms;
@@ -47,11 +46,11 @@
 }
 
 .group .number {
-  height: 1em;
+  height: var(--text-body-size-lg, 20px);
 }
 
 .reel {
-  height: 1em;
+  height: var(--text-body-size-lg, 20px);
   display: flex;
   align-items: flex-end;
   overflow-y: hidden;
@@ -59,11 +58,14 @@
   /** CUSTOMISE BELOW */
   color: var(--color-brand-black, #000);
   position: relative;
+
   /* Exo Regular/20px */
-  font-family: var(--font-family-exo, Exo);
+  font-family: var(--font-family-exo, Exo), serif;
   font-size: var(--text-body-size-lg, 20px);
-  font-style: normal;
   font-weight: var(--font-weight-regular, 500);
-  line-height: var(--text-body-line-height-lg, 24px); /* 120% */
   letter-spacing: var(--letter-spacing-tighter, 0px);
+
+  @media only screen and (min-width: $screen-width-600) {
+    line-height: var(--text-body-line-height-lg, 24px); /* 120% */
+  }
 }

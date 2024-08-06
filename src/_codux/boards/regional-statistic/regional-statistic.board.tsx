@@ -3,7 +3,7 @@ import { RegionalStatistic } from '../../../components/widgets/social-care-provi
 
 export default createBoard({
     name: 'RegionalStatistic',
-    Board: () => <RegionalStatistic />,
+    Board: () => <RegionalStatistic regionLabel="Region" regionStat={300} />,
     isSnippet: true,
     environmentProps: {
         windowWidth: 460,

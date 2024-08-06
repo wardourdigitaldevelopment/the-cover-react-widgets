@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import styles from './regional-statistic.module.scss';
+// @ts-ignore
 import Reel from '../../../../libs/reels';
 
 export interface RegionalStatisticProps {
